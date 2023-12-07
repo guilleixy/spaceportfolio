@@ -19,15 +19,13 @@ import python from './python.svg'
 import linkedin from './linkedin.svg'
 import twitter from './twitter.svg'
 import pokeball from './pokeball.svg'
-import music from './music.svg'
+import ninja from './ninja.svg'
 import arcade from './arcade.svg'
 import spotify from './spotify.svg'
 import summiz from './summiz.svg'
 import discord from './discord.svg'
 import arrow from './arrow.svg'
 import contact from './contact.svg'
-import soundon from './soundon.png'
-import soundoff from './soundoff.png'
 
 export {
     css,
@@ -51,13 +49,12 @@ export {
     linkedin,
     twitter,
     pokeball,
-    music,
+    ninja,
     arcade,
     spotify,
     summiz,
     discord,
     arrow,
     contact,
-    soundon,
-    soundoff
+
 }

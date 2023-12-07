@@ -9,14 +9,12 @@ import Sky from '../models/Sky';
 import Bird from '../models/Bird';
 import Plane from '../models/Plane';
 
-import sakura from '../assets/sakura.mp3';
-import { soundon, soundoff } from '../assets/icons';
 
 const Home = () => {
 
-  const audioRef = useRef(new Audio(sakura));
-  audioRef.current.volume = 0.2;
-  audioRef.current.loop = true;
+  // const audioRef = useRef(new Audio(sakura));
+  // audioRef.current.volume = 0.2;
+  // audioRef.current.loop = true;
 
   const [isRotating, setIsRotating] = useState(false)
 
@@ -24,20 +22,20 @@ const Home = () => {
 
   const [isPlayingMusic, setIsPlayingMusic] = useState(false)
 
-  useEffect(() => {
-    if(isPlayingMusic){
-      audioRef.current.play();
-    }else {
-      audioRef.current.pause();
-    }
-  }, [isPlayingMusic])
+  // useEffect(() => {
+  //   if(isPlayingMusic){
+  //     audioRef.current.play();
+  //   }else {
+  //     audioRef.current.pause();
+  //   }
+  // }, [isPlayingMusic])
 
   const adjustIslandForScreenSize = () =>{
     let screenScale = null;
     let screenPosition = [0, -4.5, -43];
     let rotation = [0.1, 4.75, 0.3];
     if(window.innerWidth < 768){
-      screenScale = [0.9, 0.9, 0.9];
+      screenScale = [0.125, 0.125, 0.125];
     }else{
       screenScale = [0.25, 0.25, 0.25];      
     }

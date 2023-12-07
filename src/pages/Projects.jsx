@@ -13,7 +13,7 @@ const Projects = () => {
     <section className='max-container z-index-1'>
       <h1 className='head-text'>My <RandomText text={'Projects'}/> </h1>
       <div className='mt-5 flex flex-col gap-3 text-slate-400'>
-        <p>I've embarked on numerous projects throughout the years, but these are the ones I hold closest to my heart. Many of them are open-source, so if you come across something that piques your interest, feel free to explore the codebase and contribute your ideas for further enhancements. Your collaboration is highly valued!.</p>
+        <p>I've delved into a variety of projects involving different technologies over the years, each holding a special place in my journey of continuous learning. Many of these projects showcase diverse skills, and if any catches your eye, don't hesitate to explore the codebase or the live page!</p>
       </div>
       <div className='flex flex-wrap my-20 gap-16'>
          {projects.map((project)=>(
@@ -28,8 +28,14 @@ const Projects = () => {
               <h4 className='text-2xl font-poppins font-semibold text-slate-300'>{project.name}</h4>
               <p className='mt-2 text-slate-400'>{project.description}</p>
               <div className='mt-5 flex items-center gap-2 font-fira'>
-                <Link to={project.link} target='_blank' rel='noopener noreferrer' className='font-semibold text-blue-600'>Live Link</Link>
-                <img src={arrow} alt="arrow" className='w-4 h-4 object-contain'/>
+                {project.livelink && (
+                    <>
+                      <img src={arrow} alt="arrow" className='w-4 h-4 object-contain'/>
+                      <Link to={project.livelink} target='_blank' rel='noopener noreferrer' className='font-semibold text-purple-500'>Live Link</Link>
+                    </>
+                  )}
+                <img src={arrow} alt="arrow" className='w-4 h-4 object-contain'/> 
+                <Link to={project.githublink} target='_blank' rel='noopener noreferrer' className='font-semibold text-purple-500'>Github Link</Link>
               </div>
             </div>
           </div>

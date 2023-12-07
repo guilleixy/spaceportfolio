@@ -58,10 +58,11 @@ const Contact = () => {
     if(window.innerWidth < 768){
       screenPosition = [-0.5, -1.5, 0];
     }else{
-      screenPosition = [1.5, -1.8, 0];      
+      screenPosition = [0.5, -1.8, 0];      
     }
     return [screenPosition]
   }
+  
 
   const [foxPosition] = adjustFoxForScreenSize();
 

@@ -7,7 +7,7 @@ const Footer = () => {
         <hr className='border-slate-200 mb-10'/>
         <div className='flex place-content-between items-center flex-wrap '>
             <div>
-                © 2023 <span className="font-semibold">Guillermo Bernal</span>. All rights reserved. Inspired by Adrian Hadjin.
+                © 2023 <span className="font-semibold">Guillermo Bernal</span>. All rights reserved.
             </div>
             <div className='flex items-center'>
                 <Link to="https://github.com/guilleixy" target='_blank' rel='noopener noreferrer' className='mx-4'>
