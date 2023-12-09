@@ -19,10 +19,23 @@ const Contact = () => {
     setForm({...form, [e.target.name]: e.target.value})
   };
 
+  const intervalRef = useRef(null);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsLoading(true);
-    setCurrentAnimation('ThumbsUp')
+    
+    if (intervalRef.current !== null) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    }
+
+    setCurrentAnimation('ThumbsUp');
+  
+    intervalRef.current = setInterval(() => {
+      setCurrentAnimation(prevState => prevState === 'Idle' ? 'ThumbsUp' : 'Idle');
+    }, 1800);
+  
     emailjs.send(
       import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
       import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
@@ -34,15 +47,17 @@ const Contact = () => {
         message: form.message
       },
       import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-    ).then(() =>{
+    ).then(() => {
+      clearInterval(intervalRef.current);
       setIsLoading(false);
       showAlert({show: true, text: 'Message sent successfully', type: 'success'})
       setTimeout(() => {
         hideAlert();
         setCurrentAnimation('Idle')
         setForm({ name: '', email: '', message: ''});
-      },[3000])
-    }).catch((error) =>{
+      }, 3000)
+    }).catch((error) => {
+      clearInterval(intervalRef.current);
       setIsLoading(false);
       setCurrentAnimation('Idle')
       console.log(error);
@@ -50,8 +65,32 @@ const Contact = () => {
     })
   };
 
-  const handleFocus = () => setCurrentAnimation('Wave');
-  const handleBlur = () => setCurrentAnimation('Idle');
+  const handleFocus = () => {
+    if (intervalRef.current === null) {
+      setCurrentAnimation('Wave');
+    
+      intervalRef.current = setInterval(() => {
+        setCurrentAnimation(prevState => prevState === 'Idle' ? 'Wave' : 'Idle');
+      }, 1800);
+    }
+  };
+  
+  useEffect(() => {
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+    };
+  }, []);
+
+  const handleBlur = () => {
+    if (intervalRef.current !== null) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    }
+  
+    setCurrentAnimation('Idle');
+  };
 
   const adjustFoxForScreenSize = () =>{
     let screenPosition;
