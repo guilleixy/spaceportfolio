@@ -10,7 +10,6 @@ const App = () => {
         <main className='h-full'>
         {/* <main className='bg-slate-300/20 h-full'> */}
             <Helmet>
-                <title>Guillermo Bernal</title>
                 <meta name="description" content='portfolio for the web developer Guillermo Bernal'/>
                 <meta name="keywords" content='web developer, portfolio, Guillermo Bernal, react, three.js, frontend'/>
             </Helmet>
