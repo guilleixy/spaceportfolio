@@ -7,5 +7,6 @@ export default defineConfig({
   assetsInclude: ['**/*.glb'],
   optimizeDeps: {
     exclude: ['']
-  }
+  },
+  base: '/',
 })
