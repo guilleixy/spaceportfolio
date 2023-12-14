@@ -12,6 +12,11 @@ const App = () => {
             <Helmet>
                 <meta name="description" content='portfolio for the web developer Guillermo Bernal'/>
                 <meta name="keywords" content='web developer, portfolio, Guillermo Bernal, react, three.js, frontend'/>
+                {/* etiquetas para linkedin */}
+                <meta property='og:title' content="Guillermo Bernal's Portfolio"/>
+                <meta property='og:image' content='//assets/images/frontpage.png'/>
+                <meta property='og:description' content="The Portfolio's front page, a 3D model of an astronaut floating with a moon behind"/>
+                <meta property='og:url' content='//www.gbernal.dev'/>
             </Helmet>
             <Router>
                 <Navbar />
