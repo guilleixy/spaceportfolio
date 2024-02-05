@@ -134,7 +134,7 @@ export const experiences = [
         company_name: "Google Professional",
         icon: google,
         iconBg: "#accbe1",
-        date: "Nov 2023 - Dec 2023",
+        date: "Nov 2023 - Mar 2024",
         points: [
             "User Experience Design (UXD), User Experience (UX).",
             "UX Research.",
@@ -232,8 +232,8 @@ export const projects = [
     {
         iconUrl: summiz,
         theme: 'btn-back-yellow',
-        name: 'AI Vision Aid App',
-        description: 'App that uses object detection AI and ChatGPT to help people with vision disabilities interact and recognize the enviroment.',
-        githublink: '',
+        name: 'sAIght',
+        description: 'Python-based application designed to assist individuals with visual impairments. It leverages the power of Artificial Intelligence (AI) for object detection, providing real-time feedback about the surrounding environment.',
+        githublink: 'https://github.com/guilleixy/saight',
     }
 ];
