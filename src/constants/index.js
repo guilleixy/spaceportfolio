@@ -222,11 +222,12 @@ export const projects = [
         livelink: 'https://guilleixy.github.io/feraligatrhtml/',
     },
     {
-        iconUrl: spotify,
+        iconUrl: figma,
         theme: 'btn-back-green',
         name: 'Spotify Search Bar',
-        description: 'Built a React application using the Spotify API for searching songs and artists and displaying information about them.',
-        githublink: '',
+        description: 'Built a Next Application that replicates Figma, with editing and real-time features.',
+        githublink: 'https://github.com/guilleixy/figma-clone',
+        livelink: 'https://figma-clone-three-tan.vercel.app/',
     },
 
     {
@@ -235,5 +236,6 @@ export const projects = [
         name: 'sAIght',
         description: 'Python-based application designed to assist individuals with visual impairments. It leverages the power of Artificial Intelligence (AI) for object detection, providing real-time feedback about the surrounding environment.',
         githublink: 'https://github.com/guilleixy/saight',
+        livelink: 'https://www.saight.es/',
     }
 ];
