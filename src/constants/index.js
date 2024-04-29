@@ -224,7 +224,7 @@ export const projects = [
     {
         iconUrl: figma,
         theme: 'btn-back-green',
-        name: 'Spotify Search Bar',
+        name: 'Figma Clone',
         description: 'Built a Next Application that replicates Figma, with editing and real-time features.',
         githublink: 'https://github.com/guilleixy/figma-clone',
         livelink: 'https://figma-clone-three-tan.vercel.app/',
