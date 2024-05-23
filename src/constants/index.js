@@ -192,11 +192,12 @@ export const socialLinks = [
 
 export const projects = [
     {
-        iconUrl: arcade,
+        iconUrl: figma,
         theme: 'btn-back-blue',
-        name: 'Interactive Arcade Web',
-        description: 'Developed an arcade-themed web with loads of interactive elements and games like "Pacman" with live highscores using Node.JS.',
-        githublink: 'https://github.com/guilleixy/arcade-level-2',
+        name: 'Figma Clone',
+        description: 'Built a Next Application that replicates Figma, with editing and real-time features.',
+        githublink: 'https://github.com/guilleixy/figma-clone',
+        livelink: 'https://figma-clone-three-tan.vercel.app/',
     },
     {
         iconUrl: ninja,
@@ -222,12 +223,12 @@ export const projects = [
         livelink: 'https://guilleixy.github.io/feraligatrhtml/',
     },
     {
-        iconUrl: figma,
+        iconUrl: spotify,
         theme: 'btn-back-green',
-        name: 'Figma Clone',
-        description: 'Built a Next Application that replicates Figma, with editing and real-time features.',
-        githublink: 'https://github.com/guilleixy/figma-clone',
-        livelink: 'https://figma-clone-three-tan.vercel.app/',
+        name: 'Spotify Metadata',
+        description: 'Developed a Next.js application that leverages the Spotify API to provide users with metadata information about songs.',
+        githublink: 'https://github.com/guilleixy/spotify-search-bar',
+        livelink: 'https://spotify-metadata.vercel.app/',
     },
 
     {
