@@ -24,7 +24,9 @@ import {
     tailwindcss,
     discord,
     python,
-    figma
+    figma,
+    aws,
+    rust
 } from "../assets/icons";
 
 export const skills = [
@@ -112,7 +114,17 @@ export const skills = [
         imageUrl: python,
         name: "Python",
         type: "Backend",
-    }
+    },
+    {
+        imageUrl: aws,
+        name: "Amazon Web Services",
+        type: "Backend",
+    },
+    {
+        imageUrl: rust,
+        name: "Rust",
+        type: "Backend",
+    },
 ];
 
 export const experiences = [
@@ -202,10 +214,9 @@ export const projects = [
     {
         iconUrl: ninja,
         theme: 'btn-back-black',
-        name: 'Naruto GSAP Web',
-        description: 'Programmed a simple web with GSAP animations about characters of the popular anime "Naruto".',
-        githublink: 'https://github.com/guilleixy/naruto-gsap',
-        livelink: 'https://guilleixy.github.io/naruto-gsap/',
+        name: 'Space Visualizer',
+        description: 'Developed a VR application using NASA data to create environments of real planetary bodies with procedurally generated sounds based on their parameters. Presented at NASA Space Apps Challenge 2025.',
+        // githublink: 'https://github.com/guilleixy/naruto-gsap',
     },
     {
         iconUrl: discord,
@@ -215,12 +226,11 @@ export const projects = [
         githublink: 'https://github.com/guilleixy/discord',
     },
     {
-        iconUrl: pokeball,
+        iconUrl: rust,
         theme: 'btn-back-red',
-        name: 'Pokemon Visualizer',
-        description: 'Simple Web App with Three.js and React designed to interanct with 3D models of Pokemon.',
-        githublink: 'https://github.com/guilleixy/feraligatr',
-        livelink: 'https://guilleixy.github.io/feraligatrhtml/',
+        name: 'Rust OS',
+        description: 'Developed a minimalistic operating system from scratch using Rust, focusing on low-level system programming, memory management, and OS fundamentals.',
+        githublink: 'https://github.com/guilleixy/blog_os',
     },
     {
         iconUrl: spotify,

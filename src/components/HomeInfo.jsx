@@ -14,12 +14,12 @@ const renderContent = {
         <h1 className='sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5'>
             Hi, I am <span className='font-semibold'>Guillermo</span>🙂
             <br />
-            A Full Stack Developer based in Spain.
+            Aspiring Software Engineer based in Spain.
         </h1>
     ),
     2: (
         <InfoBox 
-            text="I have undergone numerous courses, acquiring a diverse set of skills and knowledge throughout my learning journey"
+            text="I have undergone numerous projects and courses, acquiring a diverse set of skills and knowledge throughout my learning journey"
             link="/about"
             btnText="Explore My Skills"
         />

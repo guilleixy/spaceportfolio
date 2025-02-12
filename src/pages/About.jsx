@@ -18,7 +18,7 @@ function About() {
       {/* <h1 className='head-text'>Hello, I'm <span className='blue-gradient_text font-semibold drop-shadow' onMouseOver={handleMouseOver}>{name}</span></h1> */}
       <h1 className='head-text'>Hello, I'm <RandomText text={'Guillermo'} /></h1>
       <div className='mt-5 flex flex-col gap-3 text-slate-400'>
-        <p>Freelance Full Stack Developer based in Spain focused on Front-End and UX-UI.</p>
+        <p>Full Stack Developer transitioning into AI and more advanced areas of computer science.</p>
       </div>
       <div className='py-10 flex flex-col'>
         <h3 className='subhead-text'>My Skills</h3>
@@ -34,11 +34,9 @@ function About() {
           ))}
         </div>
       </div>
-      <div className='py-16'>
+      {/* <div className='py-16'>
          <h3 className='subhead-text'>Licences and Certificates</h3> 
-         {/* aqui deberia estar la experiencia xd   */}
           <div className='mt-5 flex flex-col gap-3 text-slate-400'>
-            {/* <p>I've worked with all sorts of companies, leveling up my skills and teaming up with smart people. Here's the rundown:</p> */}
             <p>I have undertaken numerous courses and certifications, enriching my skill set and collaborating with astute professionals. Let me provide you with an overview:</p>
           </div>
           <div className='mt-12 flex'>
@@ -70,7 +68,7 @@ function About() {
               ))}
             </VerticalTimeline>
           </div>
-      </div>
+      </div> */}
       <hr className='border-slate-200'/>
       <CTA />
     </section>  

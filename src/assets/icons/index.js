@@ -26,6 +26,8 @@ import summiz from './summiz.svg'
 import discord from './discord.svg'
 import arrow from './arrow.svg'
 import contact from './contact.svg'
+import aws from './aws.svg'
+import rust from './rust.svg'
 
 export {
     css,
@@ -56,5 +58,6 @@ export {
     discord,
     arrow,
     contact,
-
+    aws,
+    rust
 }
