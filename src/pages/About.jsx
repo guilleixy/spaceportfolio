@@ -34,8 +34,8 @@ function About() {
           ))}
         </div>
       </div>
-      {/* <div className='py-16'>
-         <h3 className='subhead-text'>Licences and Certificates</h3> 
+      <div className='py-16'>
+         <h3 className='subhead-text'>Education and Certificates</h3> 
           <div className='mt-5 flex flex-col gap-3 text-slate-400'>
             <p>I have undertaken numerous courses and certifications, enriching my skill set and collaborating with astute professionals. Let me provide you with an overview:</p>
           </div>
@@ -68,7 +68,7 @@ function About() {
               ))}
             </VerticalTimeline>
           </div>
-      </div> */}
+      </div>
       <hr className='border-slate-200'/>
       <CTA />
     </section>  

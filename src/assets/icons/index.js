@@ -28,6 +28,7 @@ import arrow from './arrow.svg'
 import contact from './contact.svg'
 import aws from './aws.svg'
 import rust from './rust.svg'
+import brain from './brain.svg'
 
 export {
     css,
@@ -59,5 +60,6 @@ export {
     arrow,
     contact,
     aws,
-    rust
+    rust,
+    brain
 }

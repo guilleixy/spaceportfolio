@@ -26,7 +26,8 @@ import {
     python,
     figma,
     aws,
-    rust
+    rust,
+    brain
 } from "../assets/icons";
 
 export const skills = [
@@ -138,7 +139,19 @@ export const experiences = [
             "HTML, CSS, JavaScript.",
             "PHP, MySQL, DataBases.",
             "Amazon WebServices.",
-            "XML.",
+            "Python, Machine Learning",
+        ],
+    },
+    {
+        title: "DeepLearnign Specialization",
+        company_name: "DeepLearning.AI",
+        icon: brain,
+        iconBg: "#accbe1",
+        date: "Mar 2024",
+        points: [
+            "Deep Learning concepts and techniques.",
+            "CNNs, RNNs, LSTMs, Transformers.",
+            "Python, TensorFlow."
         ],
     },
     {
